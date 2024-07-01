@@ -1,0 +1,629 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F4F8;
+    color: #0C3C60;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FFF;
+    color: white;
+}
+header .logo {
+    max-height: 50px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.language-login {
+    display: flex;
+    gap: 15px;
+}
+.language-login a {
+    color: #094A7B;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+.user-actions a {
+    color: #094A7B;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px 10px; /* Çerçevenin görünmesi için iç dolgu ekleyin */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+.user-actions a:hover {
+    color: white; /* Yazı rengi beyaz */
+    background-color: #094A7B; /* Arka plan mavi */
+    border-color: #094A7B; /* Mavi çerçeve rengi */
+    border-radius: 4px; /* Köşelerin yuvarlanması */
+    border: 2px solid #094A7B; /* Mavi çerçeve */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    background-color: #EDEFF2;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #0C3C60;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px; /* Çerçevenin görünmesi için iç dolgu ekleyin */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+nav ul li a:hover {
+    color: white; /* Yazı rengi beyaz */
+    background-color: #094A7B; /* Arka plan mavi */
+    border-color: #094A7B; /* Mavi çerçeve rengi */
+    border-radius: 4px; /* Köşelerin yuvarlanması */
+    border: 2px solid #094A7B; /* Mavi çerçeve */
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFF;
+}
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #0C3C60;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0C3C60;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar button:hover {
+    background-color: #094A7B;
+}
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FFF;
+}
+.highlights .highlight {
+    text-align: center;
+    width: 28%;
+    padding: 20px;
+    border: 1px solid #E1E4E8;
+    border-radius: 10px;
+    background-color: #F7F9FB;
+}
+.highlights .highlight a {
+    text-decoration: none;
+    color: #094A7B;
+    transition: all 0.3s ease;
+}
+.highlights .highlight a:hover {
+    color: #062b47;
+}
+.highlights .highlight img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.content, .services, .testimonials, .contact {
+    padding: 20px 30px;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+.services .service {
+    text-align: center;
+    width: 44%;
+    padding: 20px;
+    border: 1px solid #E1E4E8;
+    border-radius: 10px;
+    background-color: #F7F9FB;
+}
+.services .service a {
+    text-decoration: none;
+    color: #094A7B;
+    transition: all 0.3s ease;
+}
+.services .service a:hover {
+    color: #062b47;
+}
+.services .service img {
+    width: 600px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.testimonials {
+    background-color: #EDEFF2;
+    padding: 20px 30px;
+}
+.testimonials .testimonial {
+    margin-bottom: 20px;
+}
+.footer {
+    background-color: #0C3C60;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer .footer-logo img {
+    max-height: 50px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    border-bottom: none; /* Alt çizgiyi kaldırma */
+    transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+.footer .social-links a:hover {
+    color: #CCCCCC; /* Hover rengi */
+}
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.quick-links a:hover {
+    color: #CCCCCC;
+}
+.contact-form {
+    max-width: 600px; /* Formun maksimum genişliğini ayarlayın */
+    margin: auto; /* Formu ortalamak için otomatik kenar boşluğu ekleyin */
+    padding: 20px; /* Formun etrafına dolgu ekleyin */
+    background-color: #f1f1f1; /* Arka plan rengi */
+    border-radius: 8px; /* Köşeleri yuvarlayın */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+.contact-form h3 {
+    margin-bottom: 15px; /* Başlık alt boşluğu */
+}
+.contact-form form {
+    display: grid; /* Form öğelerini ızgara düzenine yerleştirin */
+    gap: 10px; /* Öğeler arası boşluk */
+}
+.contact-form label {
+    font-weight: bold; /* Etiketlerin kalın font olmasını sağlayın */
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Girdi alanlarının genişliğini ayarlayın */
+    padding: 10px; /* Dolgu ekleyin */
+    border: 1px solid #ccc; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    font-size: 14px; /* Yazı tipi boyutu */
+}
+.contact-form textarea {
+    resize: vertical; /* Dikey yeniden boyutlandırmayı etkinleştirin */
+}
+.contact-form button {
+    padding: 10px 20px; /* Düğme dolgusu */
+    background-color: #2A64DB; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    cursor: pointer; /* İşaretçi değiştirici */
+    font-size: 16px; /* Yazı tipi boyutu */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+.contact-form button:hover {
+    background-color: #1A478B; /* Hover arka plan rengi */
+}
+.start-conteiner {
+    max-width: 600px; /* Formun maksimum genişliğini ayarlayın */
+    margin: auto; /* Formu ortalamak için otomatik kenar boşluğu ekleyin */
+    padding: 20px; /* Formun etrafına dolgu ekleyin */
+    background-color: #f1f1f1; /* Arka plan rengi */
+    border-radius: 8px; /* Köşeleri yuvarlayın */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+.start-conteiner h2 {
+    text-align: center; /* Başlığı ortala */
+}
+.start-conteiner .form {
+    display: grid; /* Form öğelerini ızgara düzenine yerleştirin */
+    gap: 10px; /* Öğeler arası boşluk */
+}
+.start-conteiner label {
+    font-weight: bold; /* Etiketlerin kalın font olmasını sağlayın */
+}
+.start-conteiner input[type="text"],
+.start-conteiner input[type="password"] {
+    width: calc(100% - 20px); /* Girdi alanlarının genişliğini ayarlayın */
+    padding: 10px; /* Dolgu ekleyin */
+    border: 1px solid #ccc; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    font-size: 14px; /* Yazı tipi boyutu */
+}
+.start-conteiner button {
+    width: 100%; /* Düğmenin genişliğini ayarlayın */
+    padding: 10px; /* Düğme dolgusu */
+    background-color: #2A64DB; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    cursor: pointer; /* İşaretçi değiştirici */
+    font-size: 16px; /* Yazı tipi boyutu */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+.start-conteiner button:hover {
+    background-color: #1A478B; /* Hover arka plan rengi */
+}
+.start-conteiner p {
+    text-align: center; /* Paragrafı ortala */
+}
+.record-container {
+    max-width: 600px; /* Formun maksimum genişliğini ayarlayın */
+    margin: auto; /* Formu ortalamak için otomatik kenar boşluğu ekleyin */
+    padding: 20px; /* Formun etrafına dolgu ekleyin */
+    background-color: #f1f1f1; /* Arka plan rengi */
+    border-radius: 8px; /* Köşeleri yuvarlayın */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+.record-container h2 {
+    text-align: center; /* Başlığı ortala */
+}
+.record-container .form {
+    display: grid; /* Form öğelerini ızgara düzenine yerleştirin */
+    gap: 10px; /* Öğeler arası boşluk */
+}
+.record-container label {
+    font-weight: bold; /* Etiketlerin kalın font olmasını sağlayın */
+}
+.record-container input[type="text"],
+.record-container input[type="email"],
+.record-container input[type="password"] {
+    width: calc(100% - 20px); /* Girdi alanlarının genişliğini ayarlayın */
+    padding: 10px; /* Dolgu ekleyin */
+    border: 1px solid #ccc; /* Kenarlık rengi */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    font-size: 14px; /* Yazı tipi boyutu */
+}
+.record-container button {
+    width: 100%; /* Düğmenin genişliğini ayarlayın */
+    padding: 10px; /* Düğme dolgusu */
+    background-color: #2A64DB; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 4px; /* Köşeleri yuvarlayın */
+    cursor: pointer; /* İşaretçi değiştirici */
+    font-size: 16px; /* Yazı tipi boyutu */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+.record-container button:hover {
+    background-color: #1A478B; /* Hover arka plan rengi */
+}
+.record-container p {
+    text-align: center; /* Paragrafı ortala */
+}
+.products, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.product, .gallery-item {
+    border: 1px solid #E1E4E8;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FFF;
+    text-align: center;
+    width: 400px;
+}
+.product img, .gallery-item img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.product h3, .gallery-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.product p, .gallery-item p {
+    font-size: 1em;
+    color: #333;
+}
+.product button, .gallery-item button {
+    padding: 10px 20px;
+    background-color: #0C3C60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.product button:hover, .gallery-item button:hover {
+    background-color: #094A7B;
+}
+
+
+
+
+
+.hzs {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #E1E4E8;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.hzs img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hzs h3 {
+    color: #094A7B;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hzs p {
+    color: #0C3C60;
+    font-size: 1em;
+}
+
+.hzs .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #094A7B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hzs .btn:hover {
+    background-color: #062b47;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive yapma*/
+
+
+
+@media screen and (max-width: 1024px) {
+    .services .service {
+        width: 48%; /* Adjusted width for tablets */
+    }
+    .highlights .highlight {
+        width: 30%; /* Adjusted width for tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column; /* Stack header content vertically */
+        text-align: center;
+        padding: 10px;
+    }
+    .header-content,
+    .language-login {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .language-login {
+        text-align: center;
+    }
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    /* Search Bar */
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-bar input[type="text"] {
+        width: 100%; /* Full width input */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Space between input and button */
+    }
+    .search-bar button {
+        width: 100%; /* Full width button */
+    }
+    /* Highlights */
+    .highlights {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .highlights .highlight {
+        width: 45%; /* Adjusted width for tablets */
+    }
+    .highlights .highlight img {
+        max-width: 100%; /* Adjusted max-width for tablets */
+    }
+    /* Services */
+    .services .service {
+        width: 100%; /* Full width for services */
+    }
+    .services .service img {
+        width: 100%; /* Full width images */
+    }
+    /* Footer */
+    .footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .quick-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* Forms */
+    .start-conteiner,
+    .record-container,
+    .contact-form {
+        width: 100%; /* Full width for forms */
+        max-width: 100%;
+        padding: 15px; /* Adjusted padding */
+    }
+    .start-conteiner .form,
+    .record-container .form,
+    .contact-form form {
+        grid-template-columns: 1fr; /* Adjusted grid layout for mobile */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Form Container Adjustments */
+    .start-conteiner,
+    .record-container,
+    .contact-form {
+        padding: 10px; /* Further adjusted padding for smaller screens */
+    }
+    /* Label Font Size Adjustment */
+    .start-conteiner label,
+    .record-container label,
+    .contact-form label {
+        font-size: 0.9em; /* Adjusted font size for labels on mobile */
+    }
+    /* Products and Gallery Items */
+    .product,
+    .gallery-item {
+        width: 100%; /* Full width for products and gallery items on mobile */
+    }
+    .product img,
+    .gallery-item img {
+        max-width: 100%; /* Full width images on mobile */
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-form,
+    .start-conteiner,
+    .record-container {
+        width: 100%; /* Full width for forms */
+        max-width: 100%;
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .contact-form form,
+    .start-conteiner .form,
+    .record-container .form {
+        grid-template-columns: 1fr; /* Adjusted grid layout for mobile */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form,
+    .start-conteiner,
+    .record-container {
+        padding: 10px; /* Further adjusted padding for smaller screens */
+    }
+
+    .contact-form label,
+    .start-conteiner label,
+    .record-container label {
+        font-size: 0.9em; /* Adjusted font size for labels on mobile */
+    }
+}
+
+
